@@ -1,0 +1,31 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm
+- greet
+- goodbye
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- thanks
+responses:
+  utter_greet:
+  - text: Hi, I am a dog recognizer bot. Send me a photo of the dog and I will tell you its breed!
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Cool! I'm waiting for the photo!!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot recognizing dogs! Send me a photo of the dog!
+  utter_happy1:
+  - text: I'm happy that you liked it!
+actions:
+- utter_greet

@@ -1,0 +1,20 @@
+version: '3.0'
+services:
+  rasa:
+    image: rasa/rasa:2.1.0-full
+    user: root
+    ports:
+      - 5005:5005
+    volumes:
+      - ./:/app
+    command:
+      - run
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python app.py
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"

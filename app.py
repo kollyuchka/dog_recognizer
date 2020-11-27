@@ -24,7 +24,7 @@ bot = telebot.TeleBot(config.TOKEN)
 bot.remove_webhook()
 bot.set_webhook(config.URL)
 action_endpoint = config.ACTION_ENDPOINT
-agent1 = Agent.load('./models/20201125-014322.tar.gz', action_endpoint=EndpointConfig(action_endpoint))
+agent1 = Agent.load('./models/20201127-120358.tar.gz', action_endpoint=EndpointConfig(action_endpoint))
 
 
 def classify(img_path):

@@ -1,8 +1,6 @@
-rasa==2.1.0
-requests==2.23.0
-json5==0.9.1
+rasa==2.1.1
+asyncio==3.4.3
+gast==0.3.3
+numpy==1.18.5
 pyTelegramBotAPI==3.7.3
 Flask==1.1.2
-asyncio==3.4.3
-aiohttp==3.6.3
-aiogram==2.8
